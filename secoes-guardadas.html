@@ -1,0 +1,64 @@
+<!--
+  Seções retiradas do site por enquanto (Antes e depois + Depoimentos).
+  Para trazer de volta: copie o trecho abaixo e cole no index.html,
+  logo antes do comentário "Criação de sites". Para o link do menu,
+  adicione de novo: <li><a href="#antes-e-depois">Antes e depois</a></li>
+  Este arquivo não precisa ir para a hospedagem.
+-->
+    <!-- ===================== Antes e depois ===================== -->
+    <section class="secao" id="antes-e-depois" aria-labelledby="antes-titulo">
+      <div class="container">
+        <header class="secao__cabeca reveal">
+          <p class="rotulo"><svg aria-hidden="true"><use href="#px-bug"/></svg> Antes e depois</p>
+          <h2 id="antes-titulo">Poeira fora, desempenho de volta</h2>
+          <p class="secao__lead">Arraste para comparar um computador antes e depois da limpeza.</p>
+        </header>
+
+        <!-- TODO: trocar pelas fotos reais (mesmo tamanho, ex.: 1200x750, em .webp) -->
+        <div class="comparar reveal" data-comparar>
+          <img class="comparar__img" src="assets/img/depois-placeholder.svg" alt="Depois: interior do computador limpo, sem poeira" width="1200" height="750" loading="lazy" decoding="async">
+          <div class="comparar__antes">
+            <img class="comparar__img" src="assets/img/antes-placeholder.svg" alt="Antes: interior do computador coberto de poeira" width="1200" height="750" loading="lazy" decoding="async">
+          </div>
+          <span class="comparar__tag comparar__tag--antes" aria-hidden="true">Antes</span>
+          <span class="comparar__tag comparar__tag--depois" aria-hidden="true">Depois</span>
+          <div class="comparar__linha" aria-hidden="true"></div>
+          <div class="comparar__alca" role="slider" tabindex="0" aria-label="Comparar antes e depois" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" aria-valuetext="Mostrando 50% do antes">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l-6 6 6 6M15 6l6 6-6 6"/></svg>
+          </div>
+        </div>
+
+        <!-- TODO: trocar pelas fotos reais dos serviços -->
+        <ul class="galeria" role="list">
+          <li class="reveal"><figure><img src="assets/img/galeria-placeholder.svg" alt="Espaço reservado para foto de limpeza de notebook" width="600" height="600" loading="lazy" decoding="async"><figcaption>Limpeza de notebook</figcaption></figure></li>
+          <li class="reveal"><figure><img src="assets/img/galeria-placeholder.svg" alt="Espaço reservado para foto de instalação de SSD" width="600" height="600" loading="lazy" decoding="async"><figcaption>Instalação de SSD</figcaption></figure></li>
+          <li class="reveal"><figure><img src="assets/img/galeria-placeholder.svg" alt="Espaço reservado para foto de montagem de PC" width="600" height="600" loading="lazy" decoding="async"><figcaption>Montagem de PC</figcaption></figure></li>
+          <li class="reveal"><figure><img src="assets/img/galeria-placeholder.svg" alt="Espaço reservado para foto de troca de pasta térmica" width="600" height="600" loading="lazy" decoding="async"><figcaption>Troca de pasta térmica</figcaption></figure></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===================== Depoimentos ===================== -->
+    <section class="secao secao--alt" id="depoimentos" aria-labelledby="depo-titulo">
+      <div class="container">
+        <header class="secao__cabeca reveal">
+          <p class="rotulo"><svg aria-hidden="true"><use href="#px-bug"/></svg> Depoimentos</p>
+          <h2 id="depo-titulo">Quem já caçou bug com a gente</h2>
+        </header>
+        <!-- TODO: substituir pelos depoimentos reais (com autorização do cliente) -->
+        <ul class="depoimentos" role="list">
+          <li class="depo reveal">
+            <blockquote><p>TODO: depoimento real de cliente</p></blockquote>
+            <p class="depo__autor">TODO: nome do cliente <span>Bairro, Luziânia - GO</span></p>
+          </li>
+          <li class="depo reveal">
+            <blockquote><p>TODO: depoimento real de cliente</p></blockquote>
+            <p class="depo__autor">TODO: nome do cliente <span>Bairro, Luziânia - GO</span></p>
+          </li>
+          <li class="depo reveal">
+            <blockquote><p>TODO: depoimento real de cliente</p></blockquote>
+            <p class="depo__autor">TODO: nome do cliente <span>Bairro, Luziânia - GO</span></p>
+          </li>
+        </ul>
+      </div>
+    </section>

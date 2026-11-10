@@ -1,0 +1,9 @@
+# Configuração do GitHub Pages.
+# Estes arquivos ficam no repositório, mas não são publicados no site.
+exclude:
+  - README.md
+  - scripts/
+  - secoes-guardadas.html
+  - assets/img/antes-placeholder.svg
+  - assets/img/depois-placeholder.svg
+  - assets/img/galeria-placeholder.svg

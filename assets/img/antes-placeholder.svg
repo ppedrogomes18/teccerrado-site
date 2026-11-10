@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750">
+<!-- TODO: ilustração provisória. Trocar por foto real (antes da limpeza). -->
+<defs>
+<g id="f"><circle r="1" fill="#2B2822"/><g fill="#3A362E"><path d="M0 0C.1-.5.5-.8.9-.6.6-.2.3 0 0 0Z"/><path d="M0 0C.5.1.8.5.6.9.2.6 0 .3 0 0Z"/><path d="M0 0C-.1.5-.5.8-.9.6-.6.2-.3 0 0 0Z"/><path d="M0 0C-.5-.1-.8-.5-.6-.9-.2-.6 0-.3 0 0Z"/></g><circle r=".18" fill="#15120E"/></g>
+<filter id="p" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".018" numOctaves="3" seed="7"/><feColorMatrix values="0 0 0 0 .58  0 0 0 0 .53  0 0 0 0 .45  0 0 0 1.5 -.55"/></filter>
+<filter id="g" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="1" seed="3"/><feColorMatrix values="0 0 0 0 .7  0 0 0 0 .66  0 0 0 0 .58  0 0 0 4 -2.6"/></filter>
+</defs>
+<rect width="1200" height="750" fill="#100E0A"/>
+<rect x="40" y="40" width="1120" height="670" rx="18" fill="#15120E" stroke="#26211A" stroke-width="4"/>
+<rect x="150" y="80" width="780" height="590" rx="14" fill="#1C2614"/>
+<g stroke="#2B3A1E" stroke-width="5" fill="none"><path d="M180 120h200v60h120M180 640h260l40-40h180M900 120v160l-40 40M900 640V460l-30-30M560 120v40h160"/></g>
+<circle cx="440" cy="280" r="150" fill="#24221D"/>
+<use href="#f" transform="translate(440 280) scale(130)"/>
+<g fill="#D9771C"><rect x="650" y="130" width="24" height="300" rx="4"/><rect x="690" y="130" width="24" height="300" rx="4"/><rect x="730" y="130" width="24" height="300" rx="4"/><rect x="770" y="130" width="24" height="300" rx="4"/></g>
+<g fill="#F9A825"><rect x="655" y="160" width="14" height="40"/><rect x="695" y="160" width="14" height="40"/><rect x="735" y="160" width="14" height="40"/><rect x="775" y="160" width="14" height="40"/></g>
+<rect x="170" y="480" width="740" height="130" rx="12" fill="#25221C"/>
+<use href="#f" transform="translate(360 545) scale(52)"/><use href="#f" transform="translate(560 545) scale(52)"/>
+<rect x="760" y="510" width="120" height="16" rx="4" fill="#6B8E23"/>
+<rect x="970" y="80" width="160" height="590" rx="10" fill="#1A1712"/>
+<use href="#f" transform="translate(1050 220) scale(66)"/><use href="#f" transform="translate(1050 400) scale(66)"/>
+<path d="M940 600c80 0 60-120 140-130" fill="none" stroke="#8F521B" stroke-width="12" stroke-linecap="round"/>
+<path d="M800 660c40-40 90-30 140-80" fill="none" stroke="#8F521B" stroke-width="10" stroke-linecap="round"/>
+<rect x="40" y="40" width="1120" height="670" filter="url(#p)" opacity=".8"/>
+<rect x="40" y="40" width="1120" height="670" filter="url(#g)" opacity=".35"/>
+<g fill="#9C9280" opacity=".55"><circle cx="440" cy="280" r="70"/><circle cx="360" cy="545" r="34"/><circle cx="560" cy="545" r="34"/><circle cx="1050" cy="220" r="44"/><circle cx="1050" cy="400" r="44"/></g>
+<path d="M300 140c40 30 80 20 120 60M980 120c30 20 60 10 120 40" stroke="#B4AA96" stroke-width="2" fill="none" opacity=".5"/>
+</svg>
