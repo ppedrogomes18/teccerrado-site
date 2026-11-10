@@ -4,8 +4,8 @@
 
 // Configurações principais: edite aqui e o site inteiro é atualizado.
 const CONFIG = {
-  // TODO: número do WhatsApp com DDI 55 + DDD 61, só números
-  whatsapp: '5561900000000',
+  // número do WhatsApp com DDI 55 + DDD, só números
+  whatsapp: '5561999644640',
   // @ do Instagram (sem o @)
   instagram: 'tec_cerrado',
   // Mensagem usada nos botões que não têm uma mensagem específica

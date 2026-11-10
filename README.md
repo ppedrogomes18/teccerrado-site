@@ -23,7 +23,7 @@ Abra `js/main.js`. Logo no topo está o objeto `CONFIG`:
 
 ```js
 const CONFIG = {
-  whatsapp: '5561900000000',   // 55 + DDD + número, só números
+  whatsapp: '5561999644640',   // 55 + DDD + número, só números
   instagram: 'tec_cerrado',    // sem o @
   mensagemPadrao: 'Olá, TecCerrado! Vim pelo site e gostaria de um orçamento.',
 };
@@ -33,9 +33,9 @@ O script atualiza sozinho todos os botões do site. Mesmo assim, para o caso de 
 abrir o site com JavaScript desligado (e para o Google), faça também uma busca e
 substituição em `index.html`:
 
-- `5561900000000` → seu número no mesmo formato
-- `(61) 90000-0000` → seu número formatado
-- `+55-61-90000-0000` (dentro do bloco `application/ld+json`) → seu número
+- `5561999644640` → o novo número no mesmo formato
+- `(61) 99964-4640` → o novo número formatado
+- `+55-61-99964-4640` (dentro do bloco `application/ld+json`) → o novo número
 - `tec_cerrado/` nos links do Instagram → o novo @, se um dia mudar
 
 ### Mensagens de cada serviço
