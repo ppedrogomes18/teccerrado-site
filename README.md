@@ -112,41 +112,39 @@ python3 -m http.server 8000
 Depois abra http://localhost:8000 no navegador. Para ver como fica no celular, use o modo
 de dispositivo do Chrome (F12 → ícone de celular).
 
-## Publicar
+## Publicar (GitHub Pages)
 
-### Vercel
+O site fica no repositório público https://github.com/ppedrogomes18/teccerrado-site
+e é publicado pelo **GitHub Pages**, de graça e sem selo de propaganda.
 
-1. Crie uma conta em https://vercel.com (pode entrar com o GitHub).
-2. Suba esta pasta para um repositório no GitHub.
-3. Na Vercel: **Add New → Project**, escolha o repositório.
-4. Em *Framework Preset* deixe **Other**. Não precisa de comando de build nem de pasta de saída.
-5. Clique em **Deploy**. Em um minuto o site está no ar num endereço `.vercel.app`.
+Para publicar uma alteração, salve os arquivos e envie para o GitHub:
 
-Sem GitHub: instale o Node.js e rode `npx vercel` dentro da pasta.
+```bash
+git add -A
+git commit -m "Descreva a alteração"
+git push
+```
 
-### Netlify
+Em 1 a 2 minutos o GitHub atualiza o site sozinho. Dá para acompanhar em
+**Actions** ou **Settings → Pages**, no repositório.
 
-1. Crie uma conta em https://netlify.com.
-2. Mais rápido: em **Sites → Add new site → Deploy manually**, arraste a pasta do projeto.
-3. Ou conecte o repositório do GitHub (**Import an existing project**), deixando o
-   comando de build vazio e a pasta de publicação como `/`.
+O arquivo `_config.yml` lista o que fica no repositório mas **não** vai para o site
+(README, scripts, seções guardadas e imagens provisórias). Se trouxer de volta a seção
+"Antes e depois", tire as imagens `*-placeholder.svg` dessa lista.
 
-Toda vez que você fizer `git push`, a Vercel e a Netlify publicam a nova versão sozinhas.
+## Domínio (teccerrado.com.br)
 
-## Domínio próprio (teccerrado.com.br)
-
-1. Registre o domínio em https://registro.br. Domínios `.com.br` podem ser registrados
-   com CPF, então não precisa de CNPJ.
-2. **Vercel:** no projeto, vá em **Settings → Domains**, adicione `teccerrado.com.br`
-   e também `www.teccerrado.com.br`. A Vercel mostra os registros DNS que você precisa criar.
-   **Netlify:** **Domain management → Add a domain**, e ela mostra os registros.
-3. No Registro.br, abra o domínio → **DNS → Editar zona** (ou "Configurar endereçamento")
-   e crie os registros indicados. Normalmente são:
-   - um registro **A** para `teccerrado.com.br` apontando para o IP informado;
-   - um **CNAME** para `www` apontando para o endereço informado
-     (ex.: `cname.vercel-dns.com` ou `seu-site.netlify.app`).
-4. Aguarde a propagação (de minutos a algumas horas). O HTTPS (cadeado) é ativado
-   automaticamente.
+- **Registro:** Registro.br, no CPF do dono, com vencimento anual. Renove todo ano para
+  não perder o domínio.
+- **DNS:** fica na **Netlify** (servidores `dns1.p04.nsone.net` e `dns2.p04.nsone.net`).
+  Não apague a conta da Netlify nem a zona DNS `teccerrado.com.br`, senão o domínio para
+  de funcionar. Registros configurados:
+  - `A` em `teccerrado.com.br` → `185.199.108.153`, `185.199.109.153`,
+    `185.199.110.153` e `185.199.111.153` (GitHub Pages)
+  - `AAAA` em `teccerrado.com.br` → `2606:50c0:8000::153` até `2606:50c0:8003::153`
+  - `CNAME` em `www` → `ppedrogomes18.github.io`
+- **Arquivo `CNAME`:** na raiz do projeto, avisa ao GitHub qual é o domínio. Não apague.
+- **HTTPS:** emitido de graça pelo GitHub. Fica em **Settings → Pages → Enforce HTTPS**.
 
 ## Acessibilidade e movimento
 
