@@ -45,8 +45,16 @@ escrita no WhatsApp. É só editar o texto em `index.html`.
 
 ## Preços
 
-Em `index.html`, procure por `R$ XX` (cada card de serviço tem um). Use o formato
-brasileiro: `R$ 99,90`.
+Os cards de serviço não mostram preço: a ideia é o cliente chamar no WhatsApp para
+pedir o orçamento. Para voltar a mostrar, coloque esta linha logo depois da descrição
+de cada card (o `<p>` abaixo do `<h3>`), usando o formato brasileiro (`R$ 99,90`):
+
+```html
+<p class="card__preco">a partir de <strong>R$ 80</strong></p>
+```
+
+O estilo dessa linha foi retirado do `css/style.css`, então será preciso recriar a
+classe `.card__preco` (ou me pedir).
 
 ## Garantia, horário e formas de pagamento
 
